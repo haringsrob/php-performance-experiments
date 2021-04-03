@@ -46,6 +46,8 @@ all:
 	@$(MAKE) -s run_experiment_objects_vs_arrays
 	sleep 1
 	@$(MAKE) -s run_experiment_namespace_functions
+	sleep 1
+	php ./site_generator/generate.php
 
 buildprocrec:
 	cargo install --path ./procrec
