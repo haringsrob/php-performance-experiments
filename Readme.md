@@ -1,6 +1,6 @@
 # Results
 
-[See the results here.](./results/readme.md);
+[See the results here.](./results/readme.md)
 
 ## Installing procrec
 
