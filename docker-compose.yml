@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  php:
+    deploy:
+      resources:
+        limits:
+          cpus: 1
+          memory: 2048M
+        reservations:
+          memory: 2048M
+    build:
+      dockerfile: ./docker/php.Dockerfile
+      context: .
+    restart: always
+    volumes:
+      - "./:/var/www/html/"
+    ports:
+      - "8888:80"
